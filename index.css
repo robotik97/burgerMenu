@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: auto;
+    background-color: #3B0B0B;
+}
+
+body {
+    background-size: 100%;
+    margin: 0;
+}
+
+.frontend {
+    display: flex;
+    background-image: url("bg.jpg");
+    color: white;
+    height: 800px;
+    align-items: flex-end;
+}
+
+h1 {
+    padding: 100px;
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 29px;
+}
+
+.flex-container {
+    display: flex;
+    font-family: 'Goblin One', cursive;
+    justify-content: flex-end;
+
+}
+
+.flex-item {
+    font-size: 14px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.flex-item:hover,
+.flex-item:focus {
+    background-color: darkgrey;
+}
+
+.aboutMe {
+    background-color: lightgrey;
+    height: 400px;
+    margin: 0;
+}
+
+.item1 {
+    padding: 1px 100px 50px 600px;
+}
+
+.container {
+    padding: 60px;
+}
+
+.box {
+    position: absolute;
+}
+
+.box1 {
+    display: flex;
+    margin: 100px;
+    z-index: 1;
+    left: 170px;
+}
+
+.portfolio {
+    background-color: #F8F9FA;
+    height: auto;
+}
+
+.positions{
+    text-align: center;
+    padding: 10px;
+}
+
+.flex-container2 {
+    display: flex;
+    padding: 10px 100px 10px 100px;
+    justify-content: center;
+    text-align: center;
+}
+
+.flashcards {
+    margin: 10px;
+}
+
+.piano {
+    margin: 10px;
+}
+.fonts {
+    font-family: 'Goblin One', cursive;
+    font-size: 12px;
+    }
+
+.end{
+    background: #3B0B0B;
+    color: #F8F9FA;
+    text-align: center;
+    padding: 5px;
+}
+footer{
+    background-color: #F3F3FA;
+}
+.open-window{
+    background-color: #3B0B0B;
+    color: #F8F9FA;
+    border: black;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+
+
