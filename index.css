@@ -2,12 +2,12 @@
     margin: 0;
     padding: 0;
 }
-
+/*header*/
 header {
     height: auto;
     background-color: #3B0B0B;
 }
-
+/*body start*/
 body {
     background-size: 100%;
     margin: 0;
@@ -110,11 +110,13 @@ h2 {
     text-align: center;
     padding: 5px;
 }
+/*body finish*/
 
+/*footer*/
 footer {
     background-color: #F3F3FA;
 }
-
+/*popup window start*/
 .open-window {
     background-color: #3B0B0B;
     color: #F8F9FA;
@@ -123,7 +125,7 @@ footer {
     padding: 5px;
 }
 
-.popup {
+.window {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -168,7 +170,7 @@ footer {
     margin: 30px 10px;
     text-align: center;
 }
-
+/*popup window close*/
 
 
 
