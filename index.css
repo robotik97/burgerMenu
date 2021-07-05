@@ -2,11 +2,105 @@
     margin: 0;
     padding: 0;
 }
+
 /*header*/
-header {
-    height: auto;
-    background-color: #3B0B0B;
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #46127A;
 }
+
+.logo {
+    color: #F8F9FA;
+    letter-spacing: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    list-style: none;
+}
+
+.links a {
+    color: #F3F3FA;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        background-color: #46127A;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+
+
+    .links li {
+        opacity:0;
+    }
+
+    .link-active {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes hamburgerFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toogle.line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toogle.line2 {
+    opacity: 0;
+}
+
+.toogle.line3 {
+    transform: rotate(45deg) translate(5px, -6px);
+}
+/*header finish*/
+
 /*body start*/
 body {
     background-size: 100%;
@@ -30,22 +124,17 @@ h2 {
     font-size: 29px;
 }
 
-.flex-container {
-    display: flex;
-    font-family: 'Goblin One', cursive;
-    justify-content: flex-end;
 
-}
 
-.flex-item {
+a {
     font-size: 14px;
     padding: 10px;
     text-decoration: none;
     color: white;
 }
 
-.flex-item:hover,
-.flex-item:focus {
+.ul:hover,
+.ul:focus {
     background-color: darkgrey;
 }
 
@@ -99,24 +188,24 @@ h2 {
     margin: 10px;
 }
 
-.fonts {
-    font-family: 'Goblin One', cursive;
-    font-size: 12px;
-}
-
 .end {
-    background: #3B0B0B;
-    color: #F8F9FA;
+    background: #46127A;
+    color: #46127A;
     text-align: center;
     padding: 5px;
+    font-family: 'Goblin One', cursive;
+    font-size: 12px;
+    color: #F8F9FA;
 }
+
 /*body finish*/
 
 /*footer*/
 footer {
-    background-color: #F3F3FA;
+    background-color: lightgrey;
 }
-/*popup window start*/
+
+/*popup */
 .open-window {
     background-color: #3B0B0B;
     color: #F8F9FA;
@@ -125,7 +214,7 @@ footer {
     padding: 5px;
 }
 
-.window {
+.popup {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -143,22 +232,6 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 30px 10px;
-
-
-}
-
-.popup_content {
-    background-color: white;
-    color: black;
-    max-width: 700px;
-    border-radius: 18px;
-}
-
-.popup_close {
-    position: relative;
-    left: 423px;
-    top: 15px;
-
 }
 
 .popup_title {
@@ -170,7 +243,25 @@ footer {
     margin: 30px 10px;
     text-align: center;
 }
-/*popup window close*/
+
+.popup_content {
+    background-color: white;
+    color: black;
+    max-width: 700px;
+    border-radius: 18px;
+}
+
+
+
+.popup_close {
+    position: relative;
+    left: 423px;
+    top: 15px;
+}
+
+
+
+
 
 
 
