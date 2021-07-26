@@ -9,7 +9,7 @@ flash[0].onclick = function () {
 //when you press the button 'virtual piano' a window pops up
 flash[1].onclick = function () {
     popup.style.display = "block";
-};
+}
 
 //when you press the button the window closes
 close.onclick = function () {
@@ -19,27 +19,23 @@ close.onclick = function () {
 const navMenu = () => {
     const hamburger = document.querySelector(".hamburger");
     const links = document.querySelector(".links");
-    const navlinks = document.querySelectorAll(".links li");
+    const navLinks = document.querySelectorAll(".links Li");
 
-// Toogle nav
-//     hamburger.onclick = function () {
-//         links.classList.toggle('.link-active');
-//     };
-    hamburger.addEventListener('click', () => {
+// Toggle nav
+    hamburger.onclick = function () {
         links.classList.toggle('link-active');
-        navlinks.forEach((link, index)=>{
-            if (links.style.animation) {
-                links.style.animation = '';
-            }else{
-                links.style.animation='hamburgerFade 0.5s ease forwards $(index/7+0.3)s'
-            }
-
-        })
-        hamburger.classList.toggle('toogle')
-    })
+//Animate links
+        navLinks.forEach((link, index) =>{
+        if (link.style.animation) {
+            link.style.animation = ''
+        } else {
+            link.style.animation = `hamburgerFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+        }
+        });
+        //Hamburger animationn
+    hamburger.classList.toggle('toggle');
+    };
 }
-navMenu()
-// //Animate links
-//
+navMenu();
 
 
